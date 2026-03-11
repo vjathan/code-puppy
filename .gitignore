@@ -1,0 +1,33 @@
+# Sensitive data
+*.env
+.env.*
+secrets/
+credentials/
+
+# Personal info (if adding later)
+private-data.json
+sensitive-emails/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies (if adding later)
+node_modules/
+venv/
+.venv/
+
+# Build outputs (if adding later)
+dist/
+build/

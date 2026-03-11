@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virupaksha Jathan - Platform Engineering Leader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="name-logo">VJ</span>
+                <span class="name">Virupaksha Jathan</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#contributions">Contributions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-label">DIRECTOR, SOFTWARE ENGINEERING</div>
+                    <h1 class="hero-title" id="profileName">Virupaksha Jathan</h1>
+                    <p class="hero-tagline" id="profileTagline">Platform Engineering Leader | Java Modernization | AI/ML Innovation</p>
+                    <p class="hero-bio" id="profileBio"></p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-value" id="statEpics">98</div>
+                            <div class="stat-label">Epics Owned</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" id="statStoryPoints">600+</div>
+                            <div class="stat-label">Story Points</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" id="statPlatforms">5</div>
+                            <div class="stat-label">Platforms Led</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" id="statTeams">20</div>
+                            <div class="stat-label">Teams</div>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="https://www.linkedin.com/in/viru-jathan/" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                        <a href="https://github.com/vjathan" target="_blank" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-photo">
+                            <img src="https://via.placeholder.com/300" alt="Virupaksha Jathan" id="profilePhoto">
+                        </div>
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <span id="profileLocation">Sunnyvale, CA</span>
+                            </div>
+                            <div class="info-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <a href="mailto:viru.jathan@walmart.com" id="profileEmail">viru.jathan@walmart.com</a>
+                            </div>
+                            <div class="info-item">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                <span id="profilePhone">510-798-7975</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section id="platforms" class="platforms">
+        <div class="container">
+            <h2 class="section-title">Platform Portfolio</h2>
+            <p class="section-subtitle">Leading enterprise-scale engineering platforms at Walmart</p>
+            <div class="platforms-grid" id="platformsGrid">
+                <!-- Platforms will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-timeline" id="achievementsTimeline">
+                <!-- Timeline will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <h2 class="section-title">Expertise & Skills</h2>
+            <div class="expertise-grid">
+                <div class="expertise-category">
+                    <h3>Core Expertise</h3>
+                    <div class="skill-tags" id="coreExpertise"></div>
+                </div>
+                <div class="expertise-category">
+                    <h3>Technologies</h3>
+                    <div class="skills-breakdown">
+                        <div class="skill-group">
+                            <h4>Languages</h4>
+                            <div class="skill-tags" id="skillsLanguages"></div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>Cloud & Infrastructure</h4>
+                            <div class="skill-tags" id="skillsCloud"></div>
+                        </div>
+                        <div class="skill-group">
+                            <h4>DevOps & Tools</h4>
+                            <div class="skill-tags" id="skillsDevOps"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributions Section -->
+    <section id="contributions" class="contributions">
+        <div class="container">
+            <h2 class="section-title">Professional Contributions</h2>
+            <div class="contributions-grid">
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Confluence</h3>
+                    <div class="contribution-stat" id="confluenceTotal">91 Pages</div>
+                    <p>Technical documentation, team retrospectives, and knowledge sharing</p>
+                    <div id="confluenceCategories" class="contribution-details"></div>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3>JIRA</h3>
+                    <div class="contribution-stat" id="jiraEpics">98 Epics</div>
+                    <p>Strategic initiative ownership and program management</p>
+                    <div class="contribution-details">
+                        <div class="detail-item"><span class="label">Completed:</span> <span id="jiraCompleted">77</span></div>
+                        <div class="detail-item"><span class="label">Active:</span> <span id="jiraActive">23</span></div>
+                        <div class="detail-item"><span class="label">Story Points:</span> <span id="jiraPoints">600+</span></div>
+                    </div>
+                </div>
+                <div class="contribution-card">
+                    <div class="contribution-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h3>Teams & Collaboration</h3>
+                    <div class="contribution-stat" id="teamsCount">20 Teams</div>
+                    <p>Cross-functional leadership and collaboration</p>
+                    <div id="teamsList" class="contribution-details"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Career Timeline</h2>
+            <div class="timeline" id="careerTimeline">
+                <!-- Timeline will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <a href="mailto:viru.jathan@walmart.com">viru.jathan@walmart.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <div>
+                            <div class="contact-label">Phone</div>
+                            <span>510-798-7975</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <div>
+                            <div class="contact-label">Location</div>
+                            <span>Sunnyvale, CA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h3>Connect Online</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/viru-jathan/" target="_blank" class="social-link linkedin">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/vjathan" target="_blank" class="social-link github">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2026 Virupaksha Jathan. Professional profile website.</p>
+                    <p class="footer-meta">Last updated: <span id="lastUpdated"></span> | Data sources: Microsoft Graph, JIRA, Confluence, GitHub</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#top">Back to Top</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

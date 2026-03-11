@@ -1,0 +1,227 @@
+{
+  "profile": {
+    "name": "Virupaksha Jathan",
+    "title": "Director, Software Engineering",
+    "userId": "v0j0026",
+    "email": "viru.jathan@walmart.com",
+    "phone": "510-798-7975",
+    "location": "Sunnyvale, CA",
+    "manager": "Rupesh Bisoi",
+    "managerTitle": "Senior Director, Software Engineering",
+    "linkedIn": "https://www.linkedin.com/in/viru-jathan/",
+    "github": "https://gecgithub01.walmart.com/v0j0026",
+    "githubPublic": "https://github.com/vjathan",
+    "bio": "Engineering leader driving Java platform modernization, AI-powered optimization, and enterprise-scale DevOps transformation at Walmart. Passionate about building high-performing teams and delivering innovation that impacts millions of customers.",
+    "tagline": "Platform Engineering Leader | Java Modernization | AI/ML Innovation",
+    "yearsAtWalmart": "6+",
+    "githubSince": "2018"
+  },
+  "expertise": [
+    "Java Platform Engineering",
+    "AI/ML-Powered Optimization",
+    "DevOps & CI/CD",
+    "Cloud Infrastructure (Azure, GCP)",
+    "Platform Leadership",
+    "Team Building & Mentorship",
+    "Security & Compliance (PCI, HIPAA, SOX)",
+    "Enterprise Architecture",
+    "Program Management",
+    "Vendor & Partner Management"
+  ],
+  "statistics": {
+    "epicsOwned": 98,
+    "completedInitiatives": 77,
+    "storyPointsDelivered": "600+",
+    "teamsManaged": 20,
+    "confluencePages": 91,
+    "platformsLed": 5,
+    "currentProjects": 23
+  },
+  "platforms": [
+    {
+      "name": "JOG/OptHub",
+      "description": "Java Optimization Gateway - AI-powered performance optimization platform",
+      "role": "Platform Lead",
+      "impact": "15-50% CPU reduction, 2-2.5x throughput improvement",
+      "tech": ["Java", "AI/ML", "Kubernetes", "Performance Profiling"],
+      "epics": 18,
+      "status": "Production"
+    },
+    {
+      "name": "JCAA",
+      "description": "Java Code Analysis & Automation - Enterprise JDK migration and code modernization platform",
+      "role": "Product Owner",
+      "impact": "Automated JDK 8/11 to JDK 21 migration for 100+ applications",
+      "tech": ["Java", "Static Analysis", "AI/LLM", "Concord", "Echonyx"],
+      "epics": 30,
+      "status": "General Availability",
+      "milestone": "GA achieved FY26Q2"
+    },
+    {
+      "name": "JOptimizer",
+      "description": "AI-powered Java parameter optimization using machine learning",
+      "role": "Technical Lead",
+      "impact": "Automated JVM tuning reducing manual expertise requirements",
+      "tech": ["Python", "AI/ML", "FastAPI", "MCP Protocol", "Copilot Integration"],
+      "epics": 8,
+      "status": "MVP Delivered",
+      "milestone": "5 Non-Prod apps onboarded in FY26Q4"
+    },
+    {
+      "name": "Tekton",
+      "description": "Enterprise CI/CD pipeline infrastructure on Kubernetes",
+      "role": "Platform Lead",
+      "impact": "DFW datacenter decommission, Akeyless secret migration",
+      "tech": ["Tekton", "Kubernetes", "CI/CD", "Akeyless"],
+      "epics": 10,
+      "status": "Production"
+    },
+    {
+      "name": "EJE (Enterprise Java Engineering)",
+      "description": "Java governance, consultation, and upgrade exception management",
+      "role": "Program Lead",
+      "impact": "JDK upgrade consultation and policy enforcement across Walmart",
+      "tech": ["Java", "Policy Management", "Governance"],
+      "epics": 2,
+      "status": "Operational"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "JCAA General Availability",
+      "date": "FY26Q2",
+      "description": "Led Java Code Analysis & Automation platform to production, enabling automated JDK migrations enterprise-wide",
+      "impact": "100+ applications",
+      "category": "Product Launch"
+    },
+    {
+      "title": "AI-Powered JOptimizer MVP",
+      "date": "FY26Q3-Q4",
+      "description": "Delivered machine learning-based Java parameter optimization with IDE integration",
+      "impact": "5 Non-Prod apps onboarded",
+      "category": "Innovation"
+    },
+    {
+      "title": "Multi-Platform Operational Excellence",
+      "date": "FY26Q2-Q4",
+      "description": "Drove operational maturity programs across JOG, JCAA, and Tekton platforms",
+      "impact": "600+ story points delivered",
+      "category": "Operational Excellence"
+    },
+    {
+      "title": "DFW Datacenter Decommission",
+      "date": "FY26Q3-Q4",
+      "description": "Led Tekton infrastructure migration from DFW datacenter to cloud",
+      "impact": "Cost optimization & modernization",
+      "category": "Infrastructure"
+    },
+    {
+      "title": "PCI Cloud Migration",
+      "date": "2021-2022",
+      "description": "Led Payment Card Industry infrastructure migration to Azure and GCP private cloud",
+      "impact": "Enterprise security compliance",
+      "category": "Cloud Migration"
+    }
+  ],
+  "timeline": [
+    {"year": 2026, "quarter": "Q1", "event": "JOptimizer enhancements, Tekton operations, JCAA adoption scaling"},
+    {"year": 2025, "quarter": "Q4", "event": "JOptimizer MVP delivery (5 apps onboarded), Operational maturity programs"},
+    {"year": 2025, "quarter": "Q3", "event": "AI-powered Java optimization, Next-gen testing frameworks"},
+    {"year": 2025, "quarter": "Q2", "event": "JCAA General Availability, JDK 21 migration capability launch"},
+    {"year": 2024, "quarter": "Q4", "event": "JCAA platform development, Tekton enhancements"},
+    {"year": 2023, "event": "Global Techathon participation, Generative AI initiatives"},
+    {"year": 2022, "event": "PCI Cloud Migration to Azure/GCP, Middleware Web platform evolution"},
+    {"year": 2021, "event": "Tekton CI/CD platform leadership, HIPAA compliance"},
+    {"year": 2020, "event": "OneOps/Spectra platform development"},
+    {"year": 2018, "event": "Joined Walmart, GitHub account created"}
+  ],
+  "confluence": {
+    "totalPages": 91,
+    "categories": [
+      {"name": "Team Leadership & Agile", "count": 40, "description": "Retrospectives, team meetings, agile practices"},
+      {"name": "Infrastructure & Cloud", "count": 20, "description": "PCI migration, Azure/GCP, cloud readiness"},
+      {"name": "Security & Compliance", "count": 10, "description": "HIPAA, FwaaS, PCI security, InfoSec"},
+      {"name": "Platform Engineering", "count": 15, "description": "Spectra/Strati, annual planning, operations"},
+      {"name": "Technical Documentation", "count": 10, "description": "Troubleshooting guides, API docs, technical design"},
+      {"name": "Incident Management", "count": 6, "description": "Production incidents, COE, operations improvement"}
+    ]
+  },
+  "skills": {
+    "languages": ["Java", "Python", "Groovy", "JavaScript", "Shell/Bash"],
+    "frameworks": ["Spring Boot", "FastAPI", "Tekton", "Concord", "Kubernetes"],
+    "cloud": ["Azure", "GCP", "Walmart Cloud Native Platform (WCNP)"],
+    "devops": ["CI/CD", "Kubernetes", "Docker", "Tekton", "Akeyless", "Helm"],
+    "data": ["Cassandra", "BigQuery", "SQL"],
+    "security": ["PCI DSS", "HIPAA", "SOX 404", "Centrify", "Akeyless"],
+    "tools": ["JIRA", "Confluence", "Git", "GitHub", "ServiceNow", "AppDynamics"],
+    "methodologies": ["Agile", "Scrum", "SAFe", "DevOps", "Platform Engineering"]
+  },
+  "teams": [
+    "Extreme Java Expert",
+    "Developer Platforms Leadership",
+    "GTP People Managers",
+    "Modern Developer Platform",
+    "Strati Managed ASE",
+    "Kubie",
+    "Control-M Workload Automation",
+    "Middleware Web Services",
+    "Generative AI",
+    "InfoSec/Cyber Security Support"
+  ],
+  "focusAreas": [
+    {
+      "area": "Java Platform Leadership",
+      "description": "Leading JDK 8/11 to JDK 21 migration across Walmart, Extreme Java Expert program ownership, policy gate enforcement",
+      "priority": 1
+    },
+    {
+      "area": "Engineering Leadership",
+      "description": "Director-level management, people development, cross-team collaboration across 20+ Teams",
+      "priority": 2
+    },
+    {
+      "area": "Technical Program Management",
+      "description": "MASE platform, Kubie development, middleware modernization",
+      "priority": 3
+    },
+    {
+      "area": "Strategic Initiatives",
+      "description": "DFW datacenter decommissioning, cost optimization, SOX compliance, Generative AI exploration",
+      "priority": 4
+    },
+    {
+      "area": "Vendor & Partner Management",
+      "description": "Azul partnership (Java runtime), Oracle Java licensing, infrastructure vendors",
+      "priority": 5
+    }
+  ],
+  "certifications": [],
+  "education": [],
+  "publications": [],
+  "speaking": [],
+  "awards": [],
+  "social": {
+    "linkedIn": "https://www.linkedin.com/in/viru-jathan/",
+    "github": "https://github.com/vjathan",
+    "email": "viru.jathan@walmart.com"
+  },
+  "metadata": {
+    "lastUpdated": "2026-03-11",
+    "dataSources": [
+      "Microsoft Graph (O365)",
+      "JIRA",
+      "Confluence",
+      "GitHub Enterprise",
+      "LinkedIn"
+    ],
+    "version": "1.0",
+    "extensible": true,
+    "pendingDataSources": [
+      "ServiceNow (when re-enabled)",
+      "Slack",
+      "Zoom",
+      "Excel Analysis",
+      "Comprehensive Email Analysis"
+    ]
+  }
+}
