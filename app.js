@@ -72,24 +72,31 @@ async function loadProfileData() {
 }
 
 function populateHero(profile, statistics) {
-    // Basic profile info
-    document.getElementById('profileName').textContent = profile.name;
-    document.getElementById('profileTagline').textContent = profile.tagline;
-    document.getElementById('profileBio').textContent = profile.bio;
-    document.getElementById('profileLocation').textContent = profile.location;
-    document.getElementById('profileEmail').textContent = profile.email;
-    document.getElementById('profileEmail').href = `mailto:${profile.email}`;
-    document.getElementById('profilePhone').textContent = profile.phone;
-    
-    // Statistics
-    document.getElementById('statCostSavings').textContent = statistics.costSavings;
-    document.getElementById('statEngineeringHours').textContent = statistics.engineeringHours;
-    document.getElementById('statAppsModernized').textContent = statistics.appsModernized;
-    document.getElementById('statTeamSize').textContent = statistics.teamSize;
-    
-    // Profile photo placeholder (will be replaced with LinkedIn photo)
-    const profilePhoto = document.getElementById('profilePhoto');
-    profilePhoto.alt = profile.name;
+    try {
+        console.log('📊 Populating hero with stats:', statistics);
+        // Basic profile info
+        document.getElementById('profileName').textContent = profile.name;
+        document.getElementById('profileTagline').textContent = profile.tagline;
+        document.getElementById('profileBio').textContent = profile.bio;
+        document.getElementById('profileLocation').textContent = profile.location;
+        document.getElementById('profileEmail').textContent = profile.email;
+        document.getElementById('profileEmail').href = `mailto:${profile.email}`;
+        document.getElementById('profilePhone').textContent = profile.phone;
+        
+        // Statistics
+        document.getElementById('statCostSavings').textContent = statistics.costSavings;
+        document.getElementById('statEngineeringHours').textContent = statistics.engineeringHours;
+        document.getElementById('statAppsModernized').textContent = statistics.appsModernized;
+        document.getElementById('statTeamSize').textContent = statistics.teamSize;
+        
+        // Profile photo placeholder (will be replaced with LinkedIn photo)
+        const profilePhoto = document.getElementById('profilePhoto');
+        profilePhoto.alt = profile.name;
+        console.log('✅ Hero populated successfully');
+    } catch (error) {
+        console.error('❌ Error in populateHero:', error);
+        throw error;
+    }
 }
 
 function populateCorporateImpact(impacts) {
@@ -127,6 +134,11 @@ function populateCorporateImpact(impacts) {
             </div>
         </div>
     `).join('');
+        console.log('✅ Corporate impact populated successfully');
+    } catch (error) {
+        console.error('❌ Error in populateCorporateImpact:', error);
+        throw error;
+    }
 }
 
 function populatePlatforms(platforms) {
@@ -177,8 +189,14 @@ function populatePlatforms(platforms) {
 }
 
 function populateAchievements(achievements) {
-    const timeline = document.getElementById('achievementsTimeline');
-    timeline.innerHTML = '';
+    try {
+        console.log('🏆 Populating achievements, count:', achievements.length);
+        const timeline = document.getElementById('achievementsTimeline');
+        if (!timeline) {
+            console.warn('achievementsTimeline element not found');
+            return;
+        }
+        timeline.innerHTML = '';
     
     achievements.forEach(achievement => {
         const item = document.createElement('div');
@@ -196,34 +214,53 @@ function populateAchievements(achievements) {
         
         timeline.appendChild(item);
     });
+        console.log('✅ Achievements populated successfully');
+    } catch (error) {
+        console.error('❌ Error in populateAchievements:', error);
+        throw error;
+    }
 }
 
 function populateExpertise(expertise, skills) {
-    // Core expertise
-    const coreExpertise = document.getElementById('coreExpertise');
-    coreExpertise.innerHTML = expertise.map(skill => 
-        `<span class="skill-tag">${skill}</span>`
-    ).join('');
-    
-    // Languages
-    const languages = document.getElementById('skillsLanguages');
-    languages.innerHTML = skills.languages.map(lang => 
-        `<span class="tech-tag">${lang}</span>`
-    ).join('');
-    
-    // Cloud
-    const cloud = document.getElementById('skillsCloud');
-    const cloudSkills = [...skills.cloud, ...skills.frameworks];
-    cloud.innerHTML = cloudSkills.map(skill => 
-        `<span class="tech-tag">${skill}</span>`
-    ).join('');
-    
-    // DevOps
-    const devops = document.getElementById('skillsDevOps');
-    const devopsSkills = [...skills.devops, ...skills.tools];
-    devops.innerHTML = devopsSkills.map(skill => 
-        `<span class="tech-tag">${skill}</span>`
-    ).join('');
+    try {
+        console.log('📚 Populating expertise...');
+        // Core expertise
+        const coreExpertise = document.getElementById('coreExpertise');
+        if (coreExpertise) {
+            coreExpertise.innerHTML = expertise.map(skill => 
+                `<span class="skill-tag">${skill}</span>`
+            ).join('');
+        }
+        
+        // Languages
+        const languages = document.getElementById('skillsLanguages');
+        if (languages) {
+            languages.innerHTML = skills.languages.map(lang => 
+                `<span class="tech-tag">${lang}</span>`
+            ).join('');
+        }
+        
+        // Cloud
+        const cloud = document.getElementById('skillsCloud');
+        if (cloud) {
+            const cloudSkills = [...skills.cloud, ...skills.frameworks];
+            cloud.innerHTML = cloudSkills.map(skill => 
+                `<span class="tech-tag">${skill}</span>`
+            ).join('');
+        }
+        
+        // DevOps
+        const devops = document.getElementById('skillsDevOps');
+        if (devops) {
+            const devopsSkills = [...skills.devops, ...skills.tools];
+            devops.innerHTML = devopsSkills.map(skill => 
+                `<span class="tech-tag">${skill}</span>`
+            ).join('');
+        }
+        console.log('✅ Expertise populated successfully');
+    } catch (error) {
+        console.error('❌ Error in populateExpertise:', error);
+    }
 }
 
 function populateContributions(confluence, statistics, teams) {
