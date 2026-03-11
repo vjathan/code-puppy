@@ -86,7 +86,7 @@ function populateHero(profile, statistics) {
         // Statistics
         document.getElementById('statCostSavings').textContent = statistics.costSavings;
         document.getElementById('statEngineeringHours').textContent = statistics.engineeringHours;
-        document.getElementById('statAppsModernized').textContent = statistics.appsModernized;
+        document.getElementById('statPromotionsEnabled').textContent = statistics.promotionsEnabled;
         document.getElementById('statTeamSize').textContent = statistics.teamSize;
         
         // Profile photo placeholder (will be replaced with LinkedIn photo)

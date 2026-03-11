@@ -88,11 +88,11 @@
     },
     {
       "title": "Team Growth & Development",
-      "metric": "Grew team from 3 to 20 people (7 direct reports + 13 indirect reports across 2 managers)",
-      "impact": "Built high-performing platform engineering organization with 95% retention rate and strong promotion pipeline",
+      "metric": "Grew team from 3 to 20 people (7 direct reports + 13 indirect reports across 2 managers), effected 7 promotions within team",
+      "impact": "Built high-performing platform engineering organization with 95% retention rate, supported 14 career advancements (7 internal promotions + 7 external nominations)",
       "timeframe": "FY24-FY26 (2 years)",
-      "scope": "Organizational leadership: 7 direct reports (2 managers + 5 engineers), 13 indirect reports",
-      "leadership": "Hired 5 engineers, promoted 2 to senior/staff levels, mentored 20+ across organization, led tech panel reviews"
+      "scope": "Organizational leadership: 7 direct reports (2 managers + 5 engineers), 13 indirect reports, mentored 20+ across Walmart",
+      "leadership": "Hired 5 engineers, promoted 7 team members to senior/staff/manager levels, supported 7 promotion nominations outside team, led tech panel reviews"
     }
   ],
   "statistics": {
@@ -100,6 +100,7 @@
     "engineeringHours": "2,000+",
     "appsModernized": "2,000+",
     "teamSize": 20,
+    "promotionsEnabled": 14,
     "epicsOwned": 98,
     "completedInitiatives": 77,
     "storyPointsDelivered": "600+",
