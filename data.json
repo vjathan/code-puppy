@@ -88,11 +88,11 @@
     },
     {
       "title": "Team Growth & Development",
-      "metric": "Grew team from 3 to 20 people (7 direct reports + 13 indirect reports across 2 managers), effected 7 promotions within team",
-      "impact": "Built high-performing platform engineering organization with 95% retention rate, supported 14 career advancements (7 internal promotions + 7 external nominations)",
+      "metric": "Grew team from 3 to 20 people (7 direct reports + 13 indirect reports across 2 managers), effected 7 promotions within team. Team delivered 286 JIRA issues (238 story points) across 70 epics with 79% avg completion rate",
+      "impact": "Built high-performing platform engineering organization with 95% retention rate, supported 14 career advancements (7 internal promotions + 7 external nominations). Ryan Hayward's org: 197 issues/146 SP/66 epics. Anthony Balaraj's org: 89 issues/92 SP/4 epics",
       "timeframe": "FY24-FY26 (2 years)",
-      "scope": "Organizational leadership: 7 direct reports (2 managers + 5 engineers), 13 indirect reports, mentored 20+ across Walmart",
-      "leadership": "Hired 5 engineers, promoted 7 team members to senior/staff/manager levels, supported 7 promotion nominations outside team, led tech panel reviews"
+      "scope": "Organizational leadership: 7 direct reports (2 managers + 5 engineers), 13 indirect reports leading MASE, Kubie, Spectra, MWW platforms. Mentored 20+ across Walmart",
+      "leadership": "Hired 5 engineers, promoted 7 team members to senior/staff/manager levels, supported 7 promotion nominations outside team, led tech panel reviews. Strategic oversight of AI/ML initiatives (Oncall AI Assistant, Gen/Agentic AI), platform modernization (Kubie 4.0, ASEv3), and enterprise migrations (BaaS→Kubie)"
     }
   ],
   "statistics": {
@@ -104,6 +104,9 @@
     "epicsOwned": 98,
     "completedInitiatives": 77,
     "storyPointsDelivered": "600+",
+    "teamJiraIssues": 286,
+    "teamStoryPoints": 238,
+    "teamEpics": 70,
     "teamsManaged": 20,
     "confluencePages": 91,
     "platformsLed": 5,
