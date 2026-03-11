@@ -6,11 +6,13 @@ async function loadProfileData() {
         
         // Populate profile sections
         populateHero(data.profile, data.statistics);
+        if (data.corporateImpact) populateCorporateImpact(data.corporateImpact);
         populatePlatforms(data.platforms);
         populateAchievements(data.achievements);
         populateExpertise(data.expertise, data.skills);
         populateContributions(data.confluence, data.statistics, data.teams);
         populateTimeline(data.timeline);
+        if (data.timelineNote) populateTimelineNote(data.timelineNote);
         populateMetadata(data.metadata);
         
         // Populate new comprehensive data sections
@@ -44,6 +46,43 @@ function populateHero(profile, statistics) {
     // Profile photo placeholder (will be replaced with LinkedIn photo)
     const profilePhoto = document.getElementById('profilePhoto');
     profilePhoto.alt = profile.name;
+}
+
+function populateCorporateImpact(impacts) {
+    const grid = document.getElementById('corporateImpact');
+    if (!grid) return;
+    
+    grid.innerHTML = impacts.map((impact, index) => `
+        <div class="impact-card" style="animation-delay: ${index * 0.1}s">
+            <div class="impact-header">
+                <div class="impact-number">${index + 1}</div>
+                <h3 class="impact-title">${impact.title}</h3>
+            </div>
+            <div class="impact-metric">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+                <span>${impact.metric}</span>
+            </div>
+            <div class="impact-value">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+                <span>${impact.impact}</span>
+            </div>
+            <div class="impact-details">
+                <div class="impact-detail">
+                    <strong>Tim</strong> ${impact.timeframe}
+                </div>
+                <div class="impact-detail">
+                    <strong>Scope:</strong> ${impact.scope}
+                </div>
+                <div class="impact-detail">
+                    <strong>Leadership:</strong> ${impact.leadership}
+                </div>
+            </div>
+        </div>
+    `).join('');
 }
 
 function populatePlatforms(platforms) {
@@ -183,6 +222,13 @@ function populateTimeline(timeline) {
         
         timelineContainer.appendChild(timelineItem);
     });
+}
+
+function populateTimelineNote(note) {
+    const noteContainer = document.getElementById('timelineNote');
+    if (noteContainer && note) {
+        noteContainer.textContent = note;
+    }
 }
 
 function populateMetadata(metadata) {

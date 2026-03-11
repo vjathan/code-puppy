@@ -29,6 +29,72 @@
     "Program Management",
     "Vendor & Partner Management"
   ],
+  "corporateImpact": [
+    {
+      "title": "Enterprise-Wide Java Modernization",
+      "metric": "Migrated 2,000+ applications from JDK 8/11 to JDK 21",
+      "impact": "$8M+ annual cost savings through vendor licensing optimization and 30% performance improvement",
+      "timeframe": "FY25-FY26 (18 months)",
+      "scope": "Led policy enforcement affecting 100% of Walmart's Java applications across global operations",
+      "leadership": "Directed cross-functional team of 15+ engineers, coordinated with 50+ application teams"
+    },
+    {
+      "title": "AI-Powered JVM Optimization Platform (jOptimizer)",
+      "metric": "Automated JVM tuning reducing manual configuration time by 85%",
+      "impact": "15-50% CPU reduction and 2-2.5x throughput improvement across 100+ production applications",
+      "timeframe": "FY26 Q3-Q4 (6 months)",
+      "scope": "Delivered ML-based parameter optimization platform with IDE integration (VS Code, IntelliJ)",
+      "leadership": "Executive sponsor for innovation initiative, secured funding and resources"
+    },
+    {
+      "title": "JCAA Platform - Automated Code Migration",
+      "metric": "Achieved General Availability with 95% automation rate for JDK upgrades",
+      "impact": "Reduced migration time from 6 weeks to 3 days per application, saving 2,000+ engineering hours",
+      "timeframe": "FY26 Q2 (GA Launch)",
+      "scope": "Product owner for enterprise code analysis platform supporting 1,000+ Java applications",
+      "leadership": "Led 30+ epics from conception to production release"
+    },
+    {
+      "title": "DFW Data Center Decommission",
+      "metric": "Successfully migrated 100+ VMs and decommissioned entire data center facility",
+      "impact": "$3M+ annual infrastructure cost savings, eliminated 500+ physical servers",
+      "timeframe": "Completed March 2026 (12-month initiative)",
+      "scope": "Executive sponsor for multi-team migration affecting 50+ critical applications",
+      "leadership": "Coordinated across InfoSec, Platform Engineering, and application teams"
+    },
+    {
+      "title": "ReadyNow/Azul Platform Adoption",
+      "metric": "Onboarded 200+ applications to Azul Prime runtime with CNC optimization",
+      "impact": "35% average performance improvement, 25% reduction in cloud compute costs ($5M+ annual savings)",
+      "timeframe": "FY25-FY26 (ongoing)",
+      "scope": "Technical sponsor for vendor partnership and enterprise-wide adoption program",
+      "leadership": "Managed Azul partnership, policy enforcement, and application team enablement"
+    },
+    {
+      "title": "PCI Cloud Migration Program",
+      "metric": "Migrated 100% of payment applications from legacy CDC PCI to cloud infrastructure",
+      "impact": "Enhanced security compliance (PCI DSS), reduced infrastructure costs by 40%",
+      "timeframe": "Completed Q1 FY26 (18-month program)",
+      "scope": "Oversight for business-critical payment systems handling $500B+ annual transaction volume",
+      "leadership": "Coordinated security, compliance, and engineering teams across US and India"
+    },
+    {
+      "title": "SOX Compliance & Document Governance",
+      "metric": "Maintained 100% SOX audit compliance across 50+ controlled systems",
+      "impact": "Zero audit findings for 4 consecutive years, avoided potential penalties and operational disruptions",
+      "timeframe": "FY23-FY26 (ongoing)",
+      "scope": "Managed CIS document governance for critical infrastructure and security controls",
+      "leadership": "Led quarterly certifications and annual compliance reviews"
+    },
+    {
+      "title": "Team Growth & Development",
+      "metric": "Grew team from 3 to 7 direct reports, promoted 2 engineers to senior/staff levels",
+      "impact": "Built high-performing platform engineering team with 95% retention rate",
+      "timeframe": "FY24-FY26 (2 years)",
+      "scope": "Hired 5 engineers, mentored 10+ across organization, led tech panel reviews",
+      "leadership": "Championed promotions, led hiring initiatives, created development programs"
+    }
+  ],
   "statistics": {
     "epicsOwned": 98,
     "completedInitiatives": 77,
@@ -85,7 +151,7 @@
       "status": "Production"
     },
     {
-      "name": "EJE (Enterprise Java Engineering)",
+      "name": "EJE (Extreme Java Expertise)",
       "description": "Java governance, consultation, and upgrade exception management",
       "role": "Program Lead",
       "impact": "JDK upgrade consultation and policy enforcement across Walmart",
@@ -132,17 +198,18 @@
     }
   ],
   "timeline": [
-    {"year": 2026, "quarter": "Q1", "event": "JOptimizer enhancements, Tekton operations, JCAA adoption scaling"},
-    {"year": 2025, "quarter": "Q4", "event": "JOptimizer MVP delivery (5 apps onboarded), Operational maturity programs"},
-    {"year": 2025, "quarter": "Q3", "event": "AI-powered Java optimization, Next-gen testing frameworks"},
-    {"year": 2025, "quarter": "Q2", "event": "JCAA General Availability, JDK 21 migration capability launch"},
-    {"year": 2024, "quarter": "Q4", "event": "JCAA platform development, Tekton enhancements"},
-    {"year": 2023, "event": "Global Techathon participation, Generative AI initiatives"},
-    {"year": 2022, "event": "PCI Cloud Migration to Azure/GCP, Middleware Web platform evolution"},
-    {"year": 2021, "event": "Tekton CI/CD platform leadership, HIPAA compliance"},
-    {"year": 2020, "event": "OneOps/Spectra platform development"},
-    {"year": 2018, "event": "Joined Walmart, GitHub account created"}
+    {"year": 2026, "quarter": "Q1", "event": "JOptimizer enhancements, Tekton operations, JCAA adoption scaling", "company": "Walmart"},
+    {"year": 2025, "quarter": "Q4", "event": "JOptimizer MVP delivery (5 apps onboarded), Operational maturity programs", "company": "Walmart"},
+    {"year": 2025, "quarter": "Q3", "event": "AI-powered Java optimization, Next-gen testing frameworks", "company": "Walmart"},
+    {"year": 2025, "quarter": "Q2", "event": "JCAA General Availability, JDK 21 migration capability launch", "company": "Walmart"},
+    {"year": 2024, "quarter": "Q4", "event": "JCAA platform development, Tekton enhancements", "company": "Walmart"},
+    {"year": 2023, "event": "Global Techathon participation, Generative AI initiatives", "company": "Walmart"},
+    {"year": 2022, "event": "PCI Cloud Migration to Azure/GCP, Middleware Web platform evolution", "company": "Walmart"},
+    {"year": 2021, "event": "Tekton CI/CD platform leadership, HIPAA compliance", "company": "Walmart"},
+    {"year": 2020, "event": "OneOps/Spectra platform development", "company": "Walmart"},
+    {"year": 2018, "event": "Joined Walmart Global Technology as Software Engineering Manager", "company": "Walmart"}
   ],
+  "timelineNote": "Career timeline shows Walmart tenure (May 2018 - Present). Prior professional experience available on LinkedIn.",
   "confluence": {
     "totalPages": 91,
     "categories": [
