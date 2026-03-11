@@ -1,29 +1,73 @@
 // Load profile data and populate the website
 async function loadProfileData() {
     try {
+        console.log('🐶 Loading profile data...');
         const response = await fetch('data.json');
         const data = await response.json();
+        console.log('✅ Data loaded:', Object.keys(data));
         
         // Populate profile sections
+        console.log('Populating hero...');
         populateHero(data.profile, data.statistics);
-        if (data.corporateImpact) populateCorporateImpact(data.corporateImpact);
+        
+        if (data.corporateImpact) {
+            console.log('Populating corporate impact...');
+            populateCorporateImpact(data.corporateImpact);
+        }
+        
+        console.log('Populating platforms...');
         populatePlatforms(data.platforms);
+        
+        console.log('Populating achievements...');
         populateAchievements(data.achievements);
+        
+        console.log('Populating expertise...');
         populateExpertise(data.expertise, data.skills);
+        
+        console.log('Populating contributions...');
         populateContributions(data.confluence, data.statistics, data.teams);
+        
+        console.log('Populating timeline...');
         populateTimeline(data.timeline);
-        if (data.timelineNote) populateTimelineNote(data.timelineNote);
+        
+        if (data.timelineNote) {
+            console.log('Populating timeline note...');
+            populateTimelineNote(data.timelineNote);
+        }
+        
+        console.log('Populating metadata...');
         populateMetadata(data.metadata);
         
         // Populate new comprehensive data sections
-        if (data.professionalNetwork) populateProfessionalNetwork(data.professionalNetwork);
-        if (data.directReports) populateDirectReports(data.directReports);
-        if (data.activeProjects) populateActiveProjects(data.activeProjects);
-        if (data.emailMetrics) populateEmailMetrics(data.emailMetrics);
-        if (data.leadershipThemes) populateLeadershipThemes(data.leadershipThemes);
+        if (data.professionalNetwork) {
+            console.log('Populating professional network...');
+            populateProfessionalNetwork(data.professionalNetwork);
+        }
+        
+        if (data.directReports) {
+            console.log('Populating direct reports...');
+            populateDirectReports(data.directReports);
+        }
+        
+        if (data.activeProjects) {
+            console.log('Populating active projects...');
+            populateActiveProjects(data.activeProjects);
+        }
+        
+        if (data.emailMetrics) {
+            console.log('Populating email metrics...');
+            populateEmailMetrics(data.emailMetrics);
+        }
+        
+        if (data.leadershipThemes) {
+            console.log('Populating leadership themes...');
+            populateLeadershipThemes(data.leadershipThemes);
+        }
+        
+        console.log('✅ All sections populated successfully!');
         
     } catch (error) {
-        console.error('Error loading profile data:', error);
+        console.error('❌ Error loading profile data:', error);
     }
 }
 
@@ -72,7 +116,7 @@ function populateCorporateImpact(impacts) {
             </div>
             <div class="impact-details">
                 <div class="impact-detail">
-                    <strong>Tim</strong> ${impact.timeframe}
+                    <strong>Timeframe:</strong> ${impact.timeframe}
                 </div>
                 <div class="impact-detail">
                     <strong>Scope:</strong> ${impact.scope}
@@ -86,8 +130,13 @@ function populateCorporateImpact(impacts) {
 }
 
 function populatePlatforms(platforms) {
-    const grid = document.getElementById('platformsGrid');
-    grid.innerHTML = '';
+    try {
+        const grid = document.getElementById('platformsGrid');
+        if (!grid) {
+            console.warn('platformsGrid element not found');
+            return;
+        }
+        grid.innerHTML = '';
     
     platforms.forEach(platform => {
         const card = document.createElement('div');
