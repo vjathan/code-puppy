@@ -13,6 +13,13 @@ async function loadProfileData() {
         populateTimeline(data.timeline);
         populateMetadata(data.metadata);
         
+        // Populate new comprehensive data sections
+        if (data.professionalNetwork) populateProfessionalNetwork(data.professionalNetwork);
+        if (data.directReports) populateDirectReports(data.directReports);
+        if (data.activeProjects) populateActiveProjects(data.activeProjects);
+        if (data.emailMetrics) populateEmailMetrics(data.emailMetrics);
+        if (data.leadershipThemes) populateLeadershipThemes(data.leadershipThemes);
+        
     } catch (error) {
         console.error('Error loading profile data:', error);
     }
@@ -180,6 +187,72 @@ function populateTimeline(timeline) {
 
 function populateMetadata(metadata) {
     document.getElementById('lastUpdated').textContent = metadata.lastUpdated;
+}
+
+function populateProfessionalNetwork(network) {
+    // Check if section exists in HTML, if not skip
+    const networkContainer = document.getElementById('professionalNetwork');
+    if (!networkContainer) return;
+    
+    networkContainer.innerHTML = network.slice(0, 10).map(contact => `
+        <div class="network-contact">
+            <div class="contact-name">${contact.name}</div>
+            <div class="contact-role">${contact.role}</div>
+            <div class="contact-frequency">${contact.frequency}</div>
+        </div>
+    `).join('');
+}
+
+function populateDirectReports(reports) {
+    const reportsContainer = document.getElementById('directReports');
+    if (!reportsContainer) return;
+    
+    reportsContainer.innerHTML = reports.map(report => `
+        <div class="team-member">
+            <div class="member-name">${report.name}</div>
+            <div class="member-title">${report.title}</div>
+            <div class="member-location">${report.location}</div>
+        </div>
+    `).join('');
+}
+
+function populateActiveProjects(projects) {
+    const projectsContainer = document.getElementById('activeProjects');
+    if (!projectsContainer) return;
+    
+    projectsContainer.innerHTML = projects.map(project => `
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-name">${project.name}</h3>
+                <span class="project-status ${project.status.toLowerCase().replace(/\s+/g, '-')}">${project.status}</span>
+            </div>
+            <div class="project-deadline">⏰ Deadline: ${project.deadline}</div>
+            <div class="project-role">👤 ${project.role}</div>
+            <div class="project-scope">${project.scope}</div>
+            <div class="project-impact">💡 ${project.impact}</div>
+        </div>
+    `).join('');
+}
+
+function populateEmailMetrics(metrics) {
+    const metricsContainer = document.getElementById('emailMetrics');
+    if (!metricsContainer) return;
+    
+    metricsContainer.innerHTML = `
+        <div class="metric-item">Total Emails: ${metrics.totalEmails.toLocaleString()}</div>
+        <div class="metric-item">Inbox: ${metrics.inboxEmails.toLocaleString()}</div>
+        <div class="metric-item">Sent: ${metrics.sentEmails.toLocaleString()}</div>
+        <div class="metric-item">Period: ${metrics.analysisPeriod}</div>
+    `;
+}
+
+function populateLeadershipThemes(themes) {
+    const themesContainer = document.getElementById('leadershipThemes');
+    if (!themesContainer) return;
+    
+    themesContainer.innerHTML = themes.map(theme => `
+        <div class="theme-item">${theme}</div>
+    `).join('');
 }
 
 // Smooth scroll for navigation links
