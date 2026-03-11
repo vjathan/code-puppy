@@ -137,8 +137,8 @@ function populatePlatforms(platforms) {
             return;
         }
         grid.innerHTML = '';
-    
-    platforms.forEach(platform => {
+        
+        platforms.forEach(platform => {
         const card = document.createElement('div');
         card.className = 'platform-card';
         
@@ -171,6 +171,9 @@ function populatePlatforms(platforms) {
         
         grid.appendChild(card);
     });
+    } catch (error) {
+        console.error('Error in populatePlatforms:', error);
+    }
 }
 
 function populateAchievements(achievements) {
