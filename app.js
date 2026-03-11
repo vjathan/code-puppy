@@ -82,10 +82,10 @@ function populateHero(profile, statistics) {
     document.getElementById('profilePhone').textContent = profile.phone;
     
     // Statistics
-    document.getElementById('statEpics').textContent = statistics.epicsOwned;
-    document.getElementById('statStoryPoints').textContent = statistics.storyPointsDelivered;
-    document.getElementById('statPlatforms').textContent = statistics.platformsLed;
-    document.getElementById('statTeams').textContent = statistics.teamsManaged;
+    document.getElementById('statCostSavings').textContent = statistics.costSavings;
+    document.getElementById('statEngineeringHours').textContent = statistics.engineeringHours;
+    document.getElementById('statAppsModernized').textContent = statistics.appsModernized;
+    document.getElementById('statTeamSize').textContent = statistics.teamSize;
     
     // Profile photo placeholder (will be replaced with LinkedIn photo)
     const profilePhoto = document.getElementById('profilePhoto');
