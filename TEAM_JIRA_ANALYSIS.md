@@ -73,6 +73,14 @@
 - Customer migrations (100+ products affected)
 - Platform consolidation
 
+#### 5. **Managed Bot Channel Registration (MBCR)** - ~2,195+ automated operations
+- **Self-service bot provisioning**: 1,800+ provisions, 250+ updates, 145+ deprovisions
+- **ASEv2 → ASEv3 migration**: Migrated 100+ Azure Bots (ASK Me Bot, Tazo Bot, snow-storm, etc.)
+- **BCR → Azure Bot Service migration**: Critical migration due to Microsoft deprecation
+- **Epic STRAFCL-89994**: Azure Bot Migration to ASEv3 (29 child stories, completed FY26Q3)
+- **Average**: ~90 bot operations per month via self-service automation
+- **Impact**: Zero-disruption enterprise Teams chatbot platform supporting AI/GenAI bots
+
 ### Strategic Initiatives Led
 
 #### Active (FY27Q1)
@@ -221,6 +229,14 @@
 - **PCI enablement** across Kubie platform
 - **Certificate management** automation (Tomcat, IIS)
 - **DR testing coordination** (disaster recovery readiness)
+
+#### Managed Bot Channel Registration (MBCR)
+- **Self-service bot automation**: 2,195+ operations (provisions, updates, deprovisions) over 2 years
+- **ASEv2 → ASEv3 bot migration**: 100+ Azure Bots migrated (ASK Me Bot, Tazo Bot, snow-storm, etc.)
+- **BCR → Azure Bot Service**: Critical migration responding to Microsoft deprecation
+- **Teams integration platform**: Supporting enterprise-wide chatbot/AI bot deployments
+- **Concord automation**: Built reusable migration flows with CRQ automation
+- **Zero-disruption execution**: ~90 bot operations/month via DX Portal self-service
 
 ### Organizational Excellence
 

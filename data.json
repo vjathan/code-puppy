@@ -109,7 +109,7 @@
     "teamEpics": 70,
     "teamsManaged": 20,
     "confluencePages": 91,
-    "platformsLed": 5,
+    "platformsLed": 10,
     "currentProjects": 23,
     "emailsAnalyzed": "14,401+",
     "inboxEmails": "11,316",
@@ -166,6 +166,55 @@
       "tech": ["Java", "Policy Management", "Governance"],
       "epics": 2,
       "status": "Operational"
+    },
+    {
+      "name": "MASE (Managed Azure App Service Environment)",
+      "description": "Enterprise Azure App Service platform with managed infrastructure, DX UI, developer self-service, and Managed Bot Channel Registration supporting 2,195+ automated bot operations",
+      "role": "Executive Sponsor (Ryan Hayward - Senior Manager)",
+      "impact": "Auto-CRQ tooling, Oncall AI Assistant, App Insights migration, Premium ASP enablement, WUS to WUS2 migration, ASEv2→ASEv3 bot migration (100+ bots), BCR→Azure Bot service migration",
+      "tech": ["Azure", "ASEv3", "Azure Bot Service", "Teams Integration", "AI/ML", "DevOps", "App Insights", "Concord"],
+      "epics": 66,
+      "status": "Production",
+      "milestone": "146 SP delivered (FY24-FY26), 2,195+ bot operations automated"
+    },
+    {
+      "name": "Kubie (Job Processing Platform)",
+      "description": "Next-generation job processing platform replacing legacy BaaS with AI-powered capabilities and PCI compliance",
+      "role": "Executive Sponsor (Ryan Hayward - Senior Manager)",
+      "impact": "Kubie 4.0 platform, BaaS to Kubie migration (100+ products), PCI enablement, DR testing coordination",
+      "tech": ["Kubernetes", "WCNP", "AI Assistant", "PCI", "Oracle DB"],
+      "epics": 70,
+      "status": "Production",
+      "milestone": "BaaS migration completed FY26"
+    },
+    {
+      "name": "Middleware Web (MWW)",
+      "description": "Self-service automation platform for IIS, Tomcat, certificate management, and middleware infrastructure",
+      "role": "Executive Sponsor (Ryan Hayward & Anthony Balaraj)",
+      "impact": "Self-service automation, platform managed certificates, IIS/Tomcat support, vendor team enablement",
+      "tech": ["IIS", "Tomcat", "Certificates", "Automation", "Self-Service"],
+      "epics": 30,
+      "status": "Production"
+    },
+    {
+      "name": "Spectra Automation",
+      "description": "Gen/Agentic AI-powered automation platform for platform operations and developer enablement",
+      "role": "Executive Sponsor (Anthony Balaraj - Engineering Manager)",
+      "impact": "Gen/Agentic AI initiatives, MWW self-service integration, CMP platform development (72 story points)",
+      "tech": ["AI/ML", "GraphQL", "Full-stack", "Automation", "Gen AI"],
+      "epics": 4,
+      "status": "Active Development",
+      "milestone": "92 story points delivered (FY24-FY26)"
+    },
+    {
+      "name": "Managed Bot Channel Registration (MBCR)",
+      "description": "Self-service Azure Bot provisioning and management platform integrated with MASE, supporting Teams chatbot integrations enterprise-wide",
+      "role": "Executive Sponsor (Ryan Hayward - Senior Manager)",
+      "impact": "2,195+ automated bot operations (provisions, updates, deprovisions), ASEv2→ASEv3 migration for 100+ bots, BCR→Azure Bot service migration (Microsoft deprecation response)",
+      "tech": ["Azure Bot Service", "Teams", "Concord Automation", "ASEv3", "Service Principals", "DX Portal"],
+      "epics": 1,
+      "status": "Production",
+      "milestone": "~90 bot operations/month via self-service"
     }
   ],
   "achievements": [
