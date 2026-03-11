@@ -88,18 +88,18 @@
     },
     {
       "title": "Team Growth & Development",
-      "metric": "Grew team from 3 to 7 direct reports, promoted 2 engineers to senior/staff levels",
-      "impact": "Built high-performing platform engineering team with 95% retention rate",
+      "metric": "Grew team from 3 to 20 people (7 direct reports + 13 indirect reports across 2 managers)",
+      "impact": "Built high-performing platform engineering organization with 95% retention rate and strong promotion pipeline",
       "timeframe": "FY24-FY26 (2 years)",
-      "scope": "Hired 5 engineers, mentored 10+ across organization, led tech panel reviews",
-      "leadership": "Championed promotions, led hiring initiatives, created development programs"
+      "scope": "Organizational leadership: 7 direct reports (2 managers + 5 engineers), 13 indirect reports",
+      "leadership": "Hired 5 engineers, promoted 2 to senior/staff levels, mentored 20+ across organization, led tech panel reviews"
     }
   ],
   "statistics": {
     "costSavings": "$16M+",
     "engineeringHours": "2,000+",
     "appsModernized": "2,000+",
-    "teamSize": 7,
+    "teamSize": 20,
     "epicsOwned": 98,
     "completedInitiatives": 77,
     "storyPointsDelivered": "600+",
