@@ -35,7 +35,14 @@
     "teamsManaged": 20,
     "confluencePages": 91,
     "platformsLed": 5,
-    "currentProjects": 23
+    "currentProjects": 23,
+    "emailsAnalyzed": "14,401+",
+    "inboxEmails": "11,316",
+    "sentEmails": "3,085",
+    "directReports": 7,
+    "topContacts": 15,
+    "sharepointSites": "20+",
+    "emailYears": "8 (May 2018 - Mar 2026)"
   },
   "platforms": [
     {
@@ -205,14 +212,123 @@
     "github": "https://github.com/vjathan",
     "email": "viru.jathan@walmart.com"
   },
+  "professionalNetwork": [
+    {"name": "Varnika Aggarwal", "email": "Varnika.Aggarwal@walmart.com", "role": "DFW Decommission Lead", "frequency": "Very High"},
+    {"name": "Ryan Hayward", "email": "Ryan.Hayward@walmart.com", "role": "Senior Manager - Direct Report", "frequency": "Very High"},
+    {"name": "praveen Kumar Reddy", "email": "Praveenkumarreddy.Mu@walmart.com", "role": "JDK Migration Lead - Direct Report", "frequency": "Very High"},
+    {"name": "Anthony Balaraj A", "email": "Anthonybalaraj.A@walmart.com", "role": "Engineering Manager", "frequency": "High"},
+    {"name": "Rupesh Bisoi", "email": "RBisoi@walmart.com", "role": "Senior Director - Manager", "frequency": "High"},
+    {"name": "Nidhi Trivedi", "email": "Nidhi.Agarwal1@walmart.com", "role": "Java Policy Specialist - Direct Report", "frequency": "High"},
+    {"name": "Sathish Kumar Udayagiri", "email": "Sathish_Kumar.Udayag@walmart.com", "role": "Runtime Platform PM", "frequency": "High"},
+    {"name": "Shawna Lawson-Flintroy", "email": "Shawna.Flintroy@walmart.com", "role": "Sr Talent Acquisition Partner", "frequency": "High"},
+    {"name": "Tim McCarthy", "email": "Tim.Mccarthy@walmart.com", "role": "Java Policy Gate", "frequency": "Medium-High"},
+    {"name": "Umesh Sharma", "email": "Umesh.Sharma@walmart.com", "role": "SRE Policy Management", "frequency": "Medium-High"},
+    {"name": "Mihir Amlani", "email": "Mihir.Amlani@walmart.com", "role": "Extreme Java Expert", "frequency": "Medium-High"},
+    {"name": "Michael Odum", "email": "Michael.Odum@walmart.com", "role": "InfoSec Infrastructure", "frequency": "Medium-High"},
+    {"name": "Dinesh Lalwani", "email": "dinesh.lalwani@walmart.com", "role": "jOptimizer Lead - Direct Report", "frequency": "Medium-High"},
+    {"name": "Hanzhang Wang", "email": "Hanzhang.Wang@walmart.com", "role": "Performance Optimization", "frequency": "Medium-High"},
+    {"name": "Selvaraju Muthusamy", "email": "Selvaraju.Muthusamy@walmart.com", "role": "Principal Engineer - Direct Report", "frequency": "Medium-High"}
+  ],
+  "directReports": [
+    {"name": "Ryan Hayward", "title": "Senior Manager, Software Engineering", "location": "Bentonville"},
+    {"name": "Selvaraju Muthusamy", "title": "Principal, Software Engineer", "location": "Sunnyvale"},
+    {"name": "Dinesh Lalwani", "title": "Staff, Software Engineer", "location": "Sunnyvale"},
+    {"name": "Deepika Sahu", "title": "Senior, Software Engineer", "location": "Sunnyvale"},
+    {"name": "Varsha Agrawal", "title": "Senior, Software Engineer", "location": "Remote"},
+    {"name": "Praveen Kumar Reddy Munagala", "title": "Senior, Software Engineer", "location": "Remote"},
+    {"name": "Nidhi Trivedi", "title": "Senior, Software Engineer", "location": "Remote"}
+  ],
+  "activeProjects": [
+    {
+      "name": "Java Platform Migration (JDK 8/11 → JDK 21/25)",
+      "status": "CRITICAL ACTIVE",
+      "deadline": "April 1, 2026",
+      "role": "Director/Executive Sponsor",
+      "scope": "Enterprise-wide Java version upgrade affecting thousands of applications",
+      "impact": "Critical for security compliance, vendor support, platform modernization",
+      "milestones": ["Non-Prod Block Mode: March 9, 2026", "Production Block Mode: April 1, 2026"]
+    },
+    {
+      "name": "DFW Data Center Decommission",
+      "status": "ACTIVE",
+      "deadline": "March 31, 2026",
+      "role": "Executive Sponsor/Oversight",
+      "scope": "Complete shutdown of DFW Cage 3 infrastructure (100+ VMs)",
+      "impact": "Major cost savings, infrastructure consolidation"
+    },
+    {
+      "name": "ReadyNow (RNO) / Azul Platform Optimization",
+      "status": "ACTIVE",
+      "deadline": "Ongoing",
+      "role": "Technical Sponsor/Director",
+      "scope": "Policy enforcement for RNO/CNC adoption across applications",
+      "impact": "Significant performance improvements and cost optimization",
+      "technologies": ["Azul Prime", "Zing Runtime", "Cloud Native Compiler"]
+    },
+    {
+      "name": "jOptimizer - JVM Parameter Optimization Tool",
+      "status": "ACTIVE",
+      "deadline": "Development Phase",
+      "role": "Executive Sponsor",
+      "scope": "Automated JVM parameter tuning for optimal application performance",
+      "impact": "Developer productivity, application performance at scale"
+    },
+    {
+      "name": "CDC PCI Cloud Migration",
+      "status": "ACTIVE",
+      "deadline": "March 31, 2026",
+      "role": "Oversight and Coordination",
+      "scope": "Exit from legacy CDC PCI environment",
+      "impact": "Security compliance, infrastructure modernization"
+    },
+    {
+      "name": "OneOps Oracle Java to Azul Migration",
+      "status": "ACTIVE",
+      "deadline": "Cleanup Phase",
+      "role": "Policy Oversight",
+      "scope": "Application migration from Oracle Java to Azul",
+      "impact": "Vendor licensing optimization"
+    }
+  ],
+  "emailMetrics": {
+    "totalEmails": 14401,
+    "inboxEmails": 11316,
+    "unreadEmails": 2339,
+    "sentEmails": 3085,
+    "archivedEmails": 3,
+    "deletedEmails": 3725,
+    "analysisPeriod": "May 2018 - March 2026",
+    "analysisYears": 8,
+    "emailsAnalyzed": 500
+  },
+  "sharepoint": {
+    "primarySite": "CIS Document Governance",
+    "totalSites": "20+",
+    "documentLibraries": 4,
+    "keyAreas": ["SOX Compliance", "Document Governance", "Security Controls", "Change Management"],
+    "cisDocuments": "50+ categories",
+    "collaboration": ["InfoSec", "GRC", "Engineering", "Compliance"]
+  },
+  "leadershipThemes": [
+    "Modernization: Continuous platform upgrades and tech debt reduction",
+    "Compliance: Security policy enforcement and governance",
+    "Cost Optimization: Infrastructure consolidation and efficiency",
+    "Developer Experience: Improving productivity and tooling",
+    "Collaboration: Cross-team and international coordination",
+    "Data-Driven: Metrics, dashboards, and informed decisions",
+    "Urgency: Action-oriented with tight deadlines",
+    "People-First: Team development and recognition"
+  ],
   "metadata": {
     "lastUpdated": "2026-03-11",
     "dataSources": [
-      "Microsoft Graph (O365)",
-      "JIRA",
-      "Confluence",
+      "Microsoft Graph (O365) - Profile, Calendar, Teams",
+      "Microsoft Graph - Comprehensive Email Analysis (14,401+ emails, May 2018-Mar 2026)",
+      "Microsoft Graph - SharePoint Sites & Document Governance",
+      "JIRA (98 epics, 600+ story points)",
+      "Confluence (91 pages)",
       "GitHub Enterprise",
-      "LinkedIn"
+      "LinkedIn (pending photo)"
     ],
     "version": "1.0",
     "extensible": true,
