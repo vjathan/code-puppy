@@ -100,10 +100,15 @@ function populateHero(profile, statistics) {
 }
 
 function populateCorporateImpact(impacts) {
-    const grid = document.getElementById('corporateImpact');
-    if (!grid) return;
-    
-    grid.innerHTML = impacts.map((impact, index) => `
+    try {
+        console.log('🎯 Populating corporate impact, count:', impacts.length);
+        const grid = document.getElementById('corporateImpact');
+        if (!grid) {
+            console.warn('corporateImpact element not found');
+            return;
+        }
+        
+        grid.innerHTML = impacts.map((impact, index) => `
         <div class="impact-card" style="animation-delay: ${index * 0.1}s">
             <div class="impact-header">
                 <div class="impact-number">${index + 1}</div>
